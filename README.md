@@ -22,7 +22,7 @@ The reservations are managed through :
 * book-form.component.ts
 * canceled-reservation.component.ts
 * confirmation-reservation.component.ts
-* 
+
 We could here improve this feature putting all the reservation into a database. 
 
 For showing the map and all the position in the map leaflet is using, thanks to the leaflet component and the marker service. 
