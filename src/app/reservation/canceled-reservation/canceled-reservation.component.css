@@ -1,0 +1,47 @@
+.cancel-container p {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 26px;
+    font-family: 'Inter', sans-serif;
+}
+
+.cancel-btn {
+    display: block;
+    margin: 35px auto;
+    padding: 15px 10px;
+    font-size: 20px;
+    font-family: 'Orbitron', sans-serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel-btn:hover {
+    border: 2px solid #fff;
+    background-color: black;
+    color: #fff;
+    box-shadow: 5px 5px 3px black;
+}
+
+.cancel-btn:active{
+    transform: translate(-2px, 2px);
+    box-shadow: 2px 2px 3px black;
+}
+
+.return-to-map{
+    display: inline-block;
+    border: 3px solid black;
+    border-radius: 25px;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    color: #000;
+    padding: 10px 20px;
+    margin-bottom: 25px;
+}
+
+.return-to-map:hover {
+    transform: scale(1.2);
+    border: 3px solid #fff;
+}
+

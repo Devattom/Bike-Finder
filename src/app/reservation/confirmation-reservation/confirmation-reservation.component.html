@@ -1,0 +1,8 @@
+
+<div class="confirmation-container">
+    <p>Bonjour <span>{{ customerName }}</span>,</p>
+    <p>Nous avons le plaisir de vous confirmer votre réservation dans la station <span>{{ stationName }}</span> pour la date du <span>{{ reservationDate | date:'dd/MM/YYYY'}}</span></p>
+    <p>Vous allez être redirigé vers la page d'accueil</p>
+</div>
+
+<mat-progress-spinner mode="determinate" value=" {{progressSpinner }}" class="progress-spinner"></mat-progress-spinner>

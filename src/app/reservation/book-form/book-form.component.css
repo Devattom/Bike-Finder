@@ -1,0 +1,129 @@
+
+.reservation-title{
+    text-align: center;
+    font-size: 28px;
+    margin-top: 30px;
+    font-family: 'Inter',sans-serif;
+}
+
+.reservation-title span{
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.bike-info {
+    text-align: center;
+    margin: 80px;
+    font-size: 22px;
+    font-family: 'Inter', sans-serif;
+}
+
+
+form {
+    max-width: 600px;
+    border: 1px solid rgba(0, 0, 0, 0.496);
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+    font-family: 'Inter', sans-serif;
+    margin: 60px auto;
+    padding: 20px 30px;
+    background-color: #f2f2f2;
+}
+
+
+.input-group:not(:first-child), .input-checkbox-group {
+    margin-top: 15px;
+}
+
+.input-group input:disabled {
+    color: #5C1A1B;
+}
+
+.input-group label {
+    font-size: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    margin-top: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    font-size: 18px;
+}
+
+input[type=date]{
+    cursor: pointer;
+}
+
+.input-checkbox-group{
+    display: flex;
+    align-items: center;
+}
+
+.input-checkbox-group label {
+    margin-left: 10px;
+}
+.input-checkbox-group input {
+    height: 20px;
+}
+
+.info-text {
+    margin-top: 5px;
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    color: #95190C;
+    background-color: #951a0c28;
+    border-radius: 5px;
+}
+
+.input-group .ng-valid[required]{
+    border-bottom: 1px solid green;
+}
+
+.input-group .ng-invalid:not(form) {
+    border-bottom: 1px solid #95190C;
+}
+
+input[type=submit] {
+    display: block;
+    width: 80%;
+    font-family: 'Inter', sans-serif;
+    background-color: transparent;
+    color: #4e54c8;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    margin: 25px auto;
+    font-size: 22px;
+    padding: 10px 20px;
+    cursor: pointer;
+    opacity: 100;
+}
+
+input[type=submit]:hover {
+    color: #f1f1f1;
+    background-color: black;
+    transition: background-color 0.8s ease, color 0.8s ease-in-out;
+}
+
+.return-to-map{
+    display: inline-block;
+    border: 3px solid black;
+    border-radius: 25px;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    color: #000;
+    padding: 10px 20px;
+    margin-bottom: 25px;
+}
+
+.return-to-map:hover {
+    transform: scale(1.2);
+    border: 3px solid #fff;
+}
+
+

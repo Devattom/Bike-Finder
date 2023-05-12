@@ -1,0 +1,21 @@
+.confirmation-container {
+    font-size: 28px;
+    font-family: 'Inter', sans-serif;
+    line-height: 40px;
+    width: 1000px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.confirmation-container p {
+    margin-bottom: 40px;
+}
+
+.confirmation-container span {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+}
+
+.progress-spinner {
+    margin: 60px auto;
+}

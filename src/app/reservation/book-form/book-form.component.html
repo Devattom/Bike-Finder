@@ -1,0 +1,94 @@
+<h2 class="reservation-title">Réservez votre <span>vélo</span></h2>
+
+
+<div *ngIf="bikeNumber === '0'" class="bike-info">Vous ne pouvez pas réserver un vélo dans une station n'ayant aucun vélo disponible</div>
+
+<form *ngIf="stationName && bikeNumber != '0'" (ngSubmit)="onSubmit(stationName, customer.lastName, customer.email, date.value)" #bookForm="ngForm" >
+
+    <div class="input-group">
+        <label for="stationName">Nom de la station : </label>
+        <input  type="text" 
+                id="stationName" 
+                placeholder={{stationName}} 
+                disabled>
+    </div>
+
+    <div class="input-group">
+        <label for="bikesAvailable">Nombre de vélo restant : </label>
+        <input  type="text" 
+                id="bikesAvailable" 
+                placeholder={{bikeNumber}}
+                disabled>
+    </div>
+
+    <div class="input-group">
+        <label for="lastName">Votre nom : </label>
+        <input  type="text" 
+                id="lastName" 
+                placeholder='Votre nom'
+                required
+                pattern="^[a-zA-Zàéèç-]{1,25}$"
+                [(ngModel)]="customer.lastName" name="lastName"
+                #lastName = "ngModel"
+                >
+        
+        <div class="info-text" [hidden]="lastName.valid || lastName.pristine">
+            Veuillez rentrer votre nom (max 25 caractères)
+        </div>
+    </div>
+    <div class="input-group">
+        <label for="firstname">Votre Prénom : </label>
+        <input type="text" 
+                id="firstname" 
+                placeholder='Votre prénom'
+                required
+                pattern="^[a-zA-Zàéèç-]{1,25}$"
+                [(ngModel)]="customer.firstName" name="firstName"
+                #firstName = "ngModel"
+            >
+        <div class="info-text" [hidden]="firstName.valid || firstName.pristine">
+                    Veuillez rentrer votre prénom (max 25 caractères)
+                </div>
+            </div>
+
+    <div class="input-group">
+        <label for="email">Votre email : </label>
+        <input  type="email" 
+                id="email" 
+                placeholder='Votre email'
+                required
+                pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                [(ngModel)]="customer.email" name="email"
+                #email = "ngModel">
+        <div class="info-text" [hidden]="email.valid || email.pristine">
+            Veuillez rentrer un email valide.
+        </div>
+    </div>
+
+    <div class="input-group">
+        <label for="date">Sélectionner un jour : </label>
+        <input  type="date" 
+                id="date" 
+                required
+                (change)="isDateValid(date.value)"
+                #date
+                >
+        <div class="info-text" [hidden]="isDateValid(date.value)">La date ne peut être inférieur à la date du jour</div>
+    </div>
+
+    <div class="input-checkbox-group">
+        <input  type="checkbox" 
+                id="cgv"
+                name="active"
+                ngModel
+                required>
+        <label for="cgu">Veuillez cocher la case pour accepter les <a href="cgu" target="_blank">CGU</a> *</label>
+    </div>
+    
+    
+        <input  type="submit" 
+                value="Réserver" 
+                [disabled]="!isDateValid(date.value) || !bookForm.form.valid">
+</form>
+        
+            <a href="map" class="return-to-map"> <== retour à la carte 🗺️</a>
