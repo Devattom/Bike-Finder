@@ -126,4 +126,36 @@ input[type=submit]:hover {
     border: 3px solid #fff;
 }
 
+@media screen and (max-width: 600px) {
+    .reservation-title{
+        font-size: 24px;
+        margin-top: 20px;
+    }
 
+    form {
+        margin: 25px auto;
+        padding: 15px 20px;
+    }
+
+    .input-group label {
+        font-size: 18px;
+    }
+    
+    .input-group input {
+        margin-top: 8px;
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    input[type=submit] {
+        margin: 15px auto;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .return-to-map{
+        font-size: 18px;
+        padding: 10px 15px;
+        margin-bottom: 20px;
+    }
+}

@@ -45,3 +45,22 @@
     border: 3px solid #fff;
 }
 
+@media screen and (max-width: 1150px) {
+    .cancel-container p {
+        font-size: 22px;
+    }
+
+    .cancel-btn {
+        margin: 30px auto;
+        padding: 15px 10px;
+        font-size: 18px;
+    }
+
+    .return-to-map{
+        font-size: 18px;
+        color: #000;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+}
+

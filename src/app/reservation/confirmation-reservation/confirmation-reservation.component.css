@@ -2,7 +2,8 @@
     font-size: 28px;
     font-family: 'Inter', sans-serif;
     line-height: 40px;
-    width: 1000px;
+    max-width: 1000px;
+    min-width: 350px;
     margin: 40px auto;
     text-align: center;
 }
@@ -18,4 +19,38 @@
 
 .progress-spinner {
     margin: 60px auto;
+}
+
+@media screen and (max-width: 1200px){
+    .confirmation-container {
+        font-size: 22px;
+        line-height: 32px;
+        margin: 30px auto;
+    }
+    .confirmation-container span {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .confirmation-container {
+        font-size: 18px;
+        line-height: 28px;
+        margin: 20px auto;
+    }
+
+    .confirmation-container span {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 450px){
+    .confirmation-container {
+        font-size: 16px;
+        line-height: 24px;
+        margin: 20px auto;
+    }
+
+    .confirmation-container span {
+        font-size: 20px;
+    }
 }

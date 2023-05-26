@@ -4,6 +4,7 @@
     font-family: 'Inter', sans-serif;
 }
 
+
 #map {
     height: 1000px;
     width: 1000px;
@@ -15,10 +16,11 @@
 
 }
 
-@keyframes roll {
+
+/* @keyframes roll {
     0% { transform: translateX(-1800px) rotate(0deg) ;}
     100% {transform: translateX(0px) rotate(360deg) ;}
-}
+} */
 
 .title-map-page{
     text-align: center;
@@ -30,4 +32,45 @@
     text-align: center;
     font-size: 20px;
     margin: 25px 0 40px 0;
+}
+
+@media screen and (max-width: 1300px ) {
+    #map {
+        height: 800px;
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 950px ) {
+    #map {
+        height: 600px;
+        width: 600px;
+    }
+    .title-map-page {
+        font-size: 30px;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 700px ) {
+    #map {
+        height: 450px;
+        width: 450px;
+    }
+    .title-map-page {
+        font-size: 25px;
+        margin-top: 25px;
+    }
+
+    .info-text{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 550px ) {
+    #map {
+        height: 350px;
+        width: 350px;
+        border-radius: 15px;
+    }
 }

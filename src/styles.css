@@ -65,13 +65,13 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    height: auto;
 }
 
 
 /* --------------- HEADER + NAV --------------- */
 
 header {
+    width: 100%;
     border-bottom: 1px dashed black;
     text-align: center;
 }
@@ -85,10 +85,17 @@ header {
     color: black;
 }
 
+@media screen and (max-width: 800px) {
+    .nav-link{
+        font-size: 35px;
+        padding: 15px;
+    }
+}
 
+/* --------------- MAIN --------------- */
 .main-content {
-    width: 1400px;
-    min-width: 400px;
+    width: 80%;
+    min-width: 350px;
     min-height: 100%;
     margin: 0 auto;
 }
@@ -98,15 +105,20 @@ header {
     font-family: 'Inter', sans-serif;
 }
 
+.popup-container p {
+    margin: 5px;
+}
+
 
 .name{
     color: #4e54c8;
+    margin: 0;
 }
 
 .leaflet-container .link{
     text-decoration: none;
     display: block;
-    margin: 0 auto;
+    margin: 15px auto 0;
     text-align: center;
     color: #8f94fb;
     border: 1px solid #8f94fb;
@@ -119,6 +131,23 @@ header {
     background-color: #8f94fb;
     border: 1px solid black;
     color: black;
+}
+
+@media screen and (max-width: 700px) {
+    .popup-container {
+        padding: 0;
+    }
+
+    .popup-container p {
+        margin: 3px;
+        font-size: 12px;
+    }
+
+    .leaflet-container .link{
+        margin: 10px auto 0;
+        border-radius: 5px;
+        padding: 5px 10px;
+    }
 }
 
 
@@ -156,4 +185,11 @@ footer{
     text-decoration: underline;
 }
 
+@media screen and (max-width: 550px ) {
+    footer{
+        margin-top: auto;
+        padding: 15px;
+        font-size: 16px;
+    }
+}
 
